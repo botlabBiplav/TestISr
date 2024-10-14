@@ -1,0 +1,5 @@
+step1 ;- we have to generate the Instance in Aws 
+Step2 :- than we have to generate the pem file 
+Step3 :- than go to elestic ip address in the side panel  Allocate Elastic IP address
+Step4 :- Than we are going to get the ip4 address, so we are not going to use it than it will take charges so if we are going to use than only it not taking any charges and if we are going to relise it than it will not take any charges 
+Step5:- we are getting the local elastic id than 

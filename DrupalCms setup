@@ -1,0 +1,10 @@
+#1 we are going to integrate the drupal cms with the next js 
+#2 install xampp 
+#3 start the servers 
+#4 write localhost -> it will start the server locallay and you will see the admin panel in the computer 
+#5 then we are going to get the result called Welcome to XAMPP for Linux 8.2.4
+#6 to run the xampp we have yo use :- sudo /opt/lampp/manager-linux-x64.run 
+# apcha2 server will on at localhost:82 , http://localhost:82/phpmyadmin/
+# 8 to on the drupal panel just type :- http://localhost:82/drupalwebsite/core/install.php
+#9 biplav.mazumdar@botlabdynamics.com  ==> Biplav@123456789
+#10 Folder location if we want to give changes,here is the main website changes :-  /opt/lampp/htdocs/drupalwebsite 
