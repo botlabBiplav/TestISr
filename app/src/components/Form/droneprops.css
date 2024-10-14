@@ -1,0 +1,56 @@
+
+#dronecontainer{
+	position: relative;
+	width: 35vw;
+	height: 35vw;
+	/* left: -20%; */
+}
+#dronebody{
+	position: absolute;
+	left: 0;
+	margin: 17% 17%;
+	/* z-index: -1; */
+	width:66%;
+	height:66%;	
+}
+.prop_CW {
+	position: absolute;
+	width:41%;
+}
+@keyframes propCW {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+.prop_CCW {
+	position: absolute;
+	width:41%;
+}
+@keyframes propCCW {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-360deg);}
+}
+#prop1{
+	left:.5%;
+	top:.5%;
+	animation: propCW 40s infinite linear;
+}
+#prop2{
+	right:0.25%;
+	top:0.5%;
+	animation: propCCW 48s infinite linear;
+}
+#prop3{
+	left:0.5%;
+	bottom:0.15%;
+	animation: propCCW 35s infinite linear;
+}
+#prop4{
+	right:0.25%;
+	bottom:0.15%;
+	animation: propCW 38s infinite linear;
+}
+
+/* body{
+	background-color: black;
+} */

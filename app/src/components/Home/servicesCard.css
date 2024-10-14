@@ -1,0 +1,63 @@
+.service_card {
+    margin: 0 20px;
+    border: 2px black solid;
+    padding: 0 1em;
+    text-align: center;
+    width: 18%;
+    color: black;
+    background-color: white;
+    /* height: 80vh; */
+  }
+  
+  .service_card:hover {
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    /* height: 70vh; */
+  }
+  
+  .service_card:hover>.service_description {
+    display: block;
+    height: 100%;
+    opacity: 100%;
+    margin-top: 30px;
+  }
+  
+  .service_card:hover>.service_image {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    height: 50%;
+    width: 90%;
+    object-fit: cover;
+  }
+  
+  .service_image {
+    margin: auto;
+    transition: .5s;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    height: 70%;
+    width: 90%;
+    object-fit: cover;
+  }
+  
+  .service_name {
+    font-family: Lexend;
+    /* font-size: 2em; */
+    justify-content: center;
+    padding-top: 5%;
+    height: 10%;
+  }
+  
+  .service_description {
+    font-family: Lato;
+    font-size: 1em;
+    padding: 0 1em;
+    padding-top: 7.5%;
+    height: 100%;
+    display: none;
+    transition: 1s;
+    opacity: 100%;
+  }

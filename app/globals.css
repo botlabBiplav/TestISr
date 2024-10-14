@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+@font-face {
+  font-family: 'GoldenHopes';
+  src: url('/fonts/goldenhopes_personal_use_only-webfont.woff2') format('woff2'),
+    url('/fonts/goldenhopes_personal_use_only-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background bg-black text-foreground;
+  }
+}
+
+.btn {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.5px solid white;
+  padding: 10px 20px;
+  font-size: 17px;
+  background: transparent;
+  position: relative;
+  transition: all 0.25s;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: white;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+.custombutton {
+  position: relative;
+  height: 70px;
+  border-radius: 0%;
+  width: 300px;
+  padding: 0 25px;
+  color: white;
+  border: 1.36px solid #fff;
+  font-size: large;
+  user-select: none;
+  white-space: nowrap;
+  transition: 0ms;
+  font-family: inherit;
+}
+
+.custombutton::before {
+  content: "";
+  width: 10px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  left: -5px;
+  top: 8px;
+}
+
+.custombutton::after {
+  content: "";
+  width: 10px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  right: -5px;
+  top: 10px;
+}
+
+.custombutton:hover {
+  background-color: #fff;
+  color: black;
+
+}
+
+.custombutton:hover::after {
+  background-color: #fff;
+
+  width: 0px;
+}
+
+.custombutton:hover:before {
+  background-color: #fff;
+
+  width: 0px;
+}
+
+
+@media (max-width: 768px) {
+  .custombutton {
+    height: 50px;
+  }
+
+  .custombutton::before {
+    content: "";
+    width: 10px;
+    height: 28px;
+    background-color: black;
+    position: absolute;
+    left: -5px;
+    top: 8px;
+  }
+
+  .custombutton::after {
+    content: "";
+    width: 10px;
+    height: 28px;
+    background-color: black;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+  }
+}
+
+.parallax {
+  background-image: url("/Dots.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160vh;
+  background-color: black;
+}
+
+.CTA {
+  font-family: 'Lexend';
+  font-weight: 'Regular';
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  background: white;
+  color: black;
+  border: 2px black solid;
+  outline: 2px white solid;
+  /* padding: .28em 3em; */
+  transition: 0.25s;
+}
+
+.CTA:hover {
+  color: white;
+  background: none;
+  cursor: pointer;
+  box-shadow: 0 0 1em rgba(205, 50, 255, 50), 0 0 2em rgba(205, 100, 255, 25), 0 0 3em rgba(205, 150, 255, 12);
+  text-shadow: 0 0 0.05em rgba(255, 255, 255, 2);
+}
+
+.CTA:active {
+  transition: 0;
+  background: white;
+  color: black;
+  border: 2px white solid;
+  outline: none;
+  box-shadow: 0 0 1em rgba(255, 255, 255, 6), 0 0 2em rgba(255, 255, 255, 6), 0 0 3em rgba(255, 255, 255, 6);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 75);
+}
+
+.gallery-item{
+  margin: 5px;
+
+}
+
+.rd{
+  background-color: aquamarine;
+  padding: 30px;
+}

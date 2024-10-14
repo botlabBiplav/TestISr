@@ -1,0 +1,50 @@
+/* .card {
+    width: 100px !important;
+    background-color: black;
+    height: 400px;
+} */
+
+
+.galleryStyle {
+    width: 1009px;
+    position: relative;
+    height: 460px;
+    /* z-index: -1; */
+}
+
+@media (min-width: 1600px) {
+    .galleryStyle {
+        @apply w-[1900px] h-[925px]
+    }
+}
+
+/* .card1 {
+    @apply absolute xl:left-[-6px] xl:top-0 xl:w-[405px] lg:w-[383px] lg:top-1 lg:left-[-17px]
+}
+
+.card2 {
+    @apply absolute xl:top-0 xl:bottom-0 xl:right-0 lg:right-16 lg:bottom-4 lg:top-3.1 z-[-1] 
+}
+
+.card3 {
+    @apply absolute xl:bottom-[-5px] xl:left-[-6px] xl:w-[405px] lg:bottom-4 lg:w-[383px] lg:left-[-17px]
+} */
+
+
+.card1, .card3 {
+    @apply absolute;
+}
+
+
+
+.card1 {
+    @apply 3xl:left-0 3xl:top-0 3xl:w-[805px] xl:left-[-6px] xl:top-0 xl:w-[405px] lg:w-[383px] lg:top-1 lg:left-0 md:left-[3px] md:top-0 md:w-[394px];
+}
+
+.card2 {
+    @apply absolute 3xl:top-0 3xl:bottom-0 3xl:-right-0 3xl:w-[1099px] 3xl:h-[925px] xl:top-0 xl:bottom-0 xl:right-20 xl:w-[530px] xl:h-[465px] lg:w-[601px] lg:h-[440px] lg:right-6 lg:bottom-4 lg:top-[4px] md:right-28 md:top-[0px] md:bottom-4 md:w-[500px] md:h-[440px];
+}
+
+.card3 {
+    @apply 3xl:left-0 3xl:bottom-0 3xl:w-[803px] xl:left-[-6px] xl:bottom-[-5px] xl:w-[405px] lg:w-[383px] lg:bottom-4 lg:left-0 md:left-[3px] md:bottom-5 md:w-[394px];
+}
